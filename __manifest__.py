@@ -22,7 +22,7 @@
 
 {
     "name": "Localización Venezolana: Municipios y Parroquias",
-    "version": "10.0.2",
+    "version": "10.0.3",
     "author": "BachacoVE",
     "category": "Localization",
     "description":
@@ -46,6 +46,7 @@ manera que queden disponibles en todos los campos de dirección en modelos deriv
         'data/res.country.state.municipality.parish.xml',
         'views/l10n_ve_dpt_view.xml',
         'views/res_partner.xml',
+        'views/company_view.xml',
         'security/ir.model.access.csv'
     ],
     "installable": True
