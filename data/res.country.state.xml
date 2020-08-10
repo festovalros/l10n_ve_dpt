@@ -9,7 +9,6 @@
 		<field name="name">Amazonas</field>
 		<field name="ubigeo">02</field>
 	</record>
-
 	<record id="est_ve_ANZ" model="res.country.state">
 		<field name="country_id">238</field>
 		<field name="code">ANZ</field>
