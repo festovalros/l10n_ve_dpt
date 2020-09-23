@@ -1,26 +1,26 @@
 <?xml version="1.0"?>
 <odoo>
-    <data>
 
-        <record id="res_partner_view_municipality_parish" model="ir.ui.view">
-            <field name="name">res.partner.view.municipality_parish</field>
-            <field name="model">res.partner</field>
-            <field name="inherit_id" ref="base.view_partner_form" />
-            <field name="arch" type="xml">
-                <xpath expr="//div[@class='o_address_format']" position="replace">
-                    <div class="o_address_format">
-                        <field name="street" placeholder="Street..." class="o_address_street"/>
-                        <field name="street2" placeholder="Street 2..." class="o_address_street"/>
-                        <field name="city" placeholder="City" class="o_address_city"/>
-                        <field name="state_id" class="o_address_state" placeholder="State" options="{&quot;no_open&quot;: True}"/>
-                        <field name="zip" placeholder="ZIP" class="o_address_zip"/>
-                        <field name="municipality_id" placeholder="Municipality" options='{"no_open": True}' domain="[('state_id','=',state_id)]"/>
-                        <field name="parish_id" placeholder="Parish" options='{"no_open": True}' domain="[('municipality_id','=',municipality_id)]"/>
-                        <field name="country_id" placeholder="Country" class="o_address_country" options="{&quot;no_open&quot;: True}"/>
+    <record id="res_partner_view_municipality_parish" model="ir.ui.view">
+        <field name="name">res.partner.view.municipality_parish</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@class='o_address_format']" position="replace">
+                <div class="o_address_format">
+                    <field name="street" placeholder="Street..." class="o_address_street"/>
+                    <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                    <field name="city" placeholder="City" class="o_address_city"/>
+                    <field name="state_id" class="o_address_state" placeholder="State" options="{&quot;no_open&quot;: True}"/>
+                    <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                    <div class="o_row">
+                        <field name="municipality_id" placeholder="Municipality" class="ml-1" options='{"no_open": True}' domain="[('state_id','=',state_id)]"/>
+                        <field name="parish_id" placeholder="Parish" class="ml-2 oe_inline" options='{"no_open": True}' domain="[('municipality_id','=',municipality_id)]"/>
                     </div>
-                </xpath>
-            </field>
-        </record>
+                    <field name="country_id" placeholder="Country" class="o_address_country" options="{&quot;no_open&quot;: True}"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
 
-    </data>
 </odoo>
