@@ -1,9 +1,8 @@
-from odoo import models, fields, api
+from odoo import models, fields
+
 
 class res_partner(models.Model):
-
     _inherit = 'res.partner'
 
     municipality_id = fields.Many2one('res.country.state.municipality', 'Municipality')
     parish_id = fields.Many2one('res.country.state.municipality.parish', 'Parish')
-

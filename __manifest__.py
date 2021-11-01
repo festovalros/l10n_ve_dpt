@@ -22,7 +22,7 @@
 
 {
     "name": "Localización Venezolana: Municipios y Parroquias",
-    "version": "10.0.3",
+    "version": "13.0.0.0.4",
     "author": "BachacoVE",
     "category": "Localization",
     "description":
@@ -35,12 +35,11 @@ manera que queden disponibles en todos los campos de dirección en modelos deriv
      """,
     "maintainer": "BachacoVE",
     "website": "http://www.bachaco.org.ve",
-	'images': ['static/description/icon.png'],
+    'images': ['static/description/icon.png'],
     "depends": ['base', ],
     "init_xml": [],
     "demo_xml": [],
     "data": [
-
         'data/res.country.state.xml',
         'data/res.country.state.municipality.xml',
         'data/res.country.state.municipality.parish.xml',
