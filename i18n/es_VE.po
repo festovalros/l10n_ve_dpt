@@ -4,40 +4,23 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 13.0+e-20200417\n"
+"Project-Id-Version: Odoo Server 13.0+e-20200121\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-22 17:34+0000\n"
-"PO-Revision-Date: 2020-06-22 14:18-0400\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2020-05-23 11:10+0000\n"
+"PO-Revision-Date: 2020-05-23 07:30-0400\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: \n"
-"Language: gl\n"
-"X-Generator: Poedit 2.3.1\n"
-
-#. module: l10n_ve_dpt
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
-msgid "City"
-msgstr "Ciudad"
-
-#. module: l10n_ve_dpt
-#: model:ir.model,name:l10n_ve_dpt.model_res_company
-msgid "Companies"
-msgstr "Compañías"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.3\n"
+"Last-Translator: \n"
+"Language: es_VE\n"
 
 #. module: l10n_ve_dpt
 #: model:ir.model,name:l10n_ve_dpt.model_res_partner
 msgid "Contact"
 msgstr "Contacto"
-
-#. module: l10n_ve_dpt
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
-msgid "Country"
-msgstr "País"
 
 #. module: l10n_ve_dpt
 #: model:ir.model,name:l10n_ve_dpt.model_res_country_state
@@ -54,7 +37,7 @@ msgstr "Creado por"
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__create_date
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality_parish__create_date
 msgid "Created on"
-msgstr "Creando en"
+msgstr "Creado en"
 
 #. module: l10n_ve_dpt
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__display_name
@@ -72,38 +55,36 @@ msgstr ""
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality____last_update
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality_parish____last_update
 msgid "Last Modified on"
-msgstr "Última modificación por"
+msgstr "Última modificación el"
 
 #. module: l10n_ve_dpt
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__write_uid
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality_parish__write_uid
 msgid "Last Updated by"
-msgstr "Última actualización por"
+msgstr "Última vez actualizado por"
 
 #. module: l10n_ve_dpt
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__write_date
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality_parish__write_date
 msgid "Last Updated on"
-msgstr "Última actualización"
+msgstr "Última actualización el "
 
 #. module: l10n_ve_dpt
 #: model:ir.ui.menu,name:l10n_ve_dpt.item_municipalities
 msgid "Municipalities"
-msgstr "Municipios"
+msgstr "Municipalidades"
 
 #. module: l10n_ve_dpt
-#: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state__municipality_id
+#: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state__municipality_ids
 msgid "Municipalities in this state"
-msgstr "Municipios en el estado"
+msgstr "Municipios en este estado"
 
 #. module: l10n_ve_dpt
 #: model:ir.actions.act_window,name:l10n_ve_dpt.action_municipality
-#: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_company__municipality_id
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__name
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality_parish__municipality_id
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_partner__municipality_id
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_users__municipality_id
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
 #: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
 #: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.view_municipality_form
 #: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.view_municipality_tree
@@ -113,7 +94,7 @@ msgstr "Municipio"
 #. module: l10n_ve_dpt
 #: model:ir.model.fields,help:l10n_ve_dpt.field_res_country_state_municipality__name
 msgid "Municipality name"
-msgstr "Nombre del municipio"
+msgstr "Nombre del Municipio"
 
 #. module: l10n_ve_dpt
 #: model:ir.model,name:l10n_ve_dpt.model_res_country_state_municipality_parish
@@ -123,25 +104,23 @@ msgstr "Parroquias municipales"
 #. module: l10n_ve_dpt
 #: model:ir.model.fields,help:l10n_ve_dpt.field_res_country_state_municipality_parish__municipality_id
 msgid "Name of the Municipality to which the parish belongs"
-msgstr "Nombre del municipio al que pertenece la parroquia"
+msgstr "Nombre del municipio al que pertenece esta parroquia"
 
 #. module: l10n_ve_dpt
 #: model:ir.model.fields,help:l10n_ve_dpt.field_res_country_state_municipality__state_id
 msgid "Name of the State to which the municipality belongs"
-msgstr "Nombre del estado al cual pertenece la parroquia"
+msgstr "Nombre del estado al que pertenece el municipio"
 
 #. module: l10n_ve_dpt
 #: model:ir.ui.menu,name:l10n_ve_dpt.main_menu_l10n_ve_ptd
 msgid "PTD Venezuela"
-msgstr "Venezuela DPT"
+msgstr "PTD Venezuela"
 
 #. module: l10n_ve_dpt
 #: model:ir.actions.act_window,name:l10n_ve_dpt.action_parish
-#: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_company__parish_id
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality_parish__name
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_partner__parish_id
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_users__parish_id
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
 #: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
 #: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.view_parish_form
 #: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.view_parish_tree
@@ -155,50 +134,30 @@ msgstr "Nombre de la parroquia"
 
 #. module: l10n_ve_dpt
 #: model:ir.ui.menu,name:l10n_ve_dpt.item_parishes
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.view_municipality_form
 msgid "Parishes"
 msgstr "Parroquias"
 
 #. module: l10n_ve_dpt
-#: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__parish_id
+#: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__parish_ids
+#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.view_municipality_form
 msgid "Parishes in this municipality"
 msgstr "Parroquias en este municipio"
 
 #. module: l10n_ve_dpt
 #: model:ir.actions.act_window,name:l10n_ve_dpt.action_state
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state_municipality__state_id
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
 msgid "State"
 msgstr "Estado"
 
 #. module: l10n_ve_dpt
 #: model:ir.model,name:l10n_ve_dpt.model_res_country_state_municipality
 msgid "State municipalities"
-msgstr "Municipios por estado"
+msgstr "Municipios estatales"
 
 #. module: l10n_ve_dpt
 #: model:ir.ui.menu,name:l10n_ve_dpt.item_states
 msgid "States"
-msgstr "Estados"
-
-#. module: l10n_ve_dpt
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
-msgid "Street 2..."
-msgstr "Calle 2..."
-
-#. module: l10n_ve_dpt
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
-msgid "Street..."
-msgstr "Calle..."
-
-#. module: l10n_ve_dpt
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.l10n_ve_dpt_company_view
-#: model_terms:ir.ui.view,arch_db:l10n_ve_dpt.res_partner_view_municipality_parish
-msgid "ZIP"
-msgstr "ZIP"
+msgstr "Estado"
 
 #. module: l10n_ve_dpt
 #: model:ir.model.fields,field_description:l10n_ve_dpt.field_res_country_state__ubigeo

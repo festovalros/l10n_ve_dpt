@@ -7,12 +7,12 @@
             <search>
                 <field name="ubigeo"/>
                 <field name="name"/>
-                <filter name="Venezuela" domain="[('country_id.name','=','Venezuela')]"/>
+                <filter name="Venezuela" domain="[('country_id.code','=','VE')]"/>
             </search>
             </field>
         </record>
 
-        <record id="res_country_state_form_inherited" model="ir.ui.view">
+        <!-- <record id="res_country_state_form_inherited" model="ir.ui.view">
             <field name="name">res.country.state.form.inh</field>
             <field name="model">res.country.state</field>
             <field name="inherit_id" ref="base.view_country_state_form"/>
@@ -21,7 +21,7 @@
                     <field name='ubigeo'/>
                 </xpath>
             </field>
-        </record>
+        </record> -->
 
         <record id="res_country_state_tree_inherited" model="ir.ui.view">
             <field name="name">res.country.state.tree.inh</field>
@@ -47,15 +47,15 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="Municipality">
-                <sheet>
-                    <group>
-                        <field name="ubigeo"/>
-                        <field name="name"/>
-                    </group>
-                    <group string="Parishes">
-                        <field name="parish_id" nolabel="1"/>
-                    </group>
-                </sheet>
+                    <sheet>
+                        <group col="4" colspan="2">
+                            <field name="ubigeo"/>
+                            <field name="name" select="2"/>
+                        </group>
+                        <group string="Parishes in this municipality">
+                           <field name="parish_ids" select="3" nolabel="1"/>
+                        </group>
+                    </sheet>
                 </form>
             </field>
         </record>
@@ -65,7 +65,7 @@
             <field name="model">res.country.state.municipality</field>
             <field name="type">tree</field>
             <field name="arch" type="xml">
-                <tree string="Municipality">
+                <tree string="Municipality" editable="bottom">
                     <field name="ubigeo"/>
                     <field name="name"/>
                     <field name="state_id"/>
@@ -77,6 +77,7 @@
             <field name="name">Municipality</field>
             <field name="res_model">res.country.state.municipality</field>
             <field name="view_mode">tree,form</field>
+            <field name="type">ir.actions.act_window</field>
         </record>
 
 
@@ -87,12 +88,10 @@
             <field name="arch" type="xml">
                 <form string="Parish">
                     <sheet>
-                        <group>
+                        <group col="4" colspan="2">
                             <field name="ubigeo"/>
-                            <field name="name"/>
-                        </group>
-                        <group>
-                            <field name="municipality_id"/>
+                            <field name="name" select="2"/>
+                            <field name="municipality_id" select="0"/>
                         </group>
                     </sheet>
                 </form>
@@ -117,6 +116,7 @@
             <field name="res_model">res.country.state.municipality.parish</field>
             <field name="view_mode">tree,form</field>
         </record>
+
 
         <!-- Submenu for Venezuela Political Territorial Division -->
         <menuitem id="main_menu_l10n_ve_ptd" name="PTD Venezuela"  parent="base.menu_administration"/>

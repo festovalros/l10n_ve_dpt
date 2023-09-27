@@ -3,17 +3,14 @@ import logging
 
 from odoo import models, fields, api
 
-class res_partner(models.Model):
+class Company(models.Model):
 
-    _inherit = 'res.partner'
+    _inherit = 'res.company'
 
-    
     def _get_country(self):
         country = self.env['res.country'].search([('id', '=', '238')], limit=1)
         if country.id:
             return country.id
-        else:
-            pass
 
     country_id = fields.Many2one('res.country', string="Country", default=_get_country)
     municipality_id = fields.Many2one('res.country.state.municipality', 'Municipality')
