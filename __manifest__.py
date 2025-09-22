@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Localización Politico Territorial Venezolana: Municipios y Parroquias",
-    "version": "15.0.0.0.1",
+    "version": "17.0.0.0.1",
     "author": "Empero LLC",
     "category": "Localization",
     "description":
