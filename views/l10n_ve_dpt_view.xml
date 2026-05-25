@@ -28,7 +28,7 @@
             <field name="model">res.country.state</field>
             <field name="inherit_id" ref="base.view_country_state_tree"/>
             <field name="arch" type="xml">
-                <xpath expr="//tree[1]" position='inside'>
+                <xpath expr="//list[1]" position='inside'>
                     <field name='ubigeo'/>
                 </xpath>
             </field>
@@ -37,7 +37,7 @@
         <record id="action_state" model="ir.actions.act_window">
             <field name="name">State</field>
             <field name="res_model">res.country.state</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="context">{"search_default_Venezuela":1}</field>
         </record>
 
@@ -63,20 +63,20 @@
         <record id="view_municipality_tree" model="ir.ui.view">
             <field name="name">res.country.state.municipality.tree</field>
             <field name="model">res.country.state.municipality</field>
-            <field name="type">tree</field>
+            <field name="type">list</field>
             <field name="arch" type="xml">
-                <tree string="Municipality" editable="bottom">
+                <list string="Municipality" editable="bottom">
                     <field name="ubigeo"/>
                     <field name="name"/>
                     <field name="state_id"/>
-                </tree>
+                </list>
             </field>
         </record>
 
         <record id="action_municipality" model="ir.actions.act_window">
             <field name="name">Municipality</field>
             <field name="res_model">res.country.state.municipality</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
             <field name="type">ir.actions.act_window</field>
         </record>
 
@@ -101,20 +101,20 @@
         <record id="view_parish_tree" model="ir.ui.view">
             <field name="name">res.country.state.municipality.parish.tree</field>
             <field name="model">res.country.state.municipality.parish</field>
-            <field name="type">tree</field>
+            <field name="type">list</field>
             <field name="arch" type="xml">
-                <tree string="Parish">
+                <list string="Parish">
                     <field name="ubigeo"/>
                     <field name="name"/>
                     <field name="municipality_id"/>
-                </tree>
+                </list>
             </field>
         </record>
 
         <record id="action_parish" model="ir.actions.act_window">
             <field name="name">Parish</field>
             <field name="res_model">res.country.state.municipality.parish</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">list,form</field>
         </record>
 
 
